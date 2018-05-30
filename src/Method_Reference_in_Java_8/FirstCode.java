@@ -30,7 +30,7 @@ public class FirstCode {
 
     public static void main(String[] args){
 
-        List<String> names = Arrays.asList("Geoffrey", "Anne", "Mduduzi", "Siyabonga", "Depolelo");
+        List<String> names = Arrays.asList("Geoffrey", "Anne", "Nokuthula", "Mduduzi", "Siyabonga", "Depolelo");
 
         Consumer<String> con = new Consumer<String>() {
             @Override
