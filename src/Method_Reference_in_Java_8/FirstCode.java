@@ -44,12 +44,24 @@ public class FirstCode {
         //names.forEach(System.out::println);
 
         String str = "Geo";
+
         MyPrinter myPrinter = new MyPrinter();
-        myPrinter.print(str, new Parser(){
-            public String parse(String s){
-                return StringParser.convert(s);
-            };
-        });
+
+        // 1.1
+
+//        myPrinter.print(str, new Parser(){
+//            public String parse(String s){
+//                return StringParser.convert(s);
+//            };
+//        });
+
+        // 1.2
+
+        //myPrinter.print(str, (s->StringParser.convert(s)));
+
+        //1.3
+
+        myPrinter.print(str, StringParser::convert);
 
     }
 
