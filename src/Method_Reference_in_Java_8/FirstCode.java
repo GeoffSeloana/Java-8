@@ -43,7 +43,9 @@ public class FirstCode {
         //names.forEach(s-> System.out.println(s));
         //names.forEach(System.out::println);
 
-        String str = "Geo";
+        String str = "inn";
+
+
 
         MyPrinter myPrinter = new MyPrinter();
 
@@ -59,9 +61,15 @@ public class FirstCode {
 
         //myPrinter.print(str, (s->StringParser.convert(s)));
 
-        //1.3
+        // 1.3
 
-        myPrinter.print(str, StringParser::convert);
+        //myPrinter.print(str, StringParser::convert);
+
+        // 1.4
+
+       // StringParser sp = new StringParser();
+        //myPrinter.print(str, ( sp::convert ));
+
 
     }
 
