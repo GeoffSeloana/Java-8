@@ -33,6 +33,15 @@ public class StringJoinerDemo {
 
         System.out.println(stringJoiner4.length());
 
+        // StringJoiner empty
+
+        StringJoiner stringJoiner5 = new StringJoiner(":", "{", "}");
+        stringJoiner5.setEmptyValue("empty");
+        System.out.println(stringJoiner5);
+
+        // StringJoiner to String
+        System.out.println(stringJoiner1.toString());
+
     }
 
 }
